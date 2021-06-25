@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size:  62.5%;
+    font-family: "DM sans", sans-serif;
+
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #FAF8F7;
+    --just-white: #fff;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+header .header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin-top: 40px;
+    align-self: center;
+    text-align: center;
+}
+header .header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+header .header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+header .header--title-container a {
+    position: absolute;
+    left: calc(50% - 114.5px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+header .header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/down-arrow.svg');
+}
+
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background: var(--off-white);
+}
+main .main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+main .main-exchange-container-title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+main .Img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .main-exchange-container-title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+main .main-exchange-container-title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+main .main-currency-table, .main-commission-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+main .main-currency-table--title, .main-commission-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+main .main-commission-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
+main .main-currency-table--container, .main-commission-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+main .main-currency-table--container table, .main-commission-table--container table {
+    width: 100%;
+    height: 100%;
+}
+main .main-currency-table--container td, .main-commission-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background: var(--just-white);
+}
+main .main-currency-table--container .table__right, .main-commission-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    color: #757575;
+}
+main .main-currency-table--container .up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/trending-up.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .main-currency-table--container .down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/trending-down.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .main-currency-table--container .table__top-left, .main-commission-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+main .main-currency-table--container .table__top-right, .main-commission-table--container .table__top-right {
+    border-radius: 0 15px 0 0;
+}
+main .main-currency-table--container .table__bottom-left, .main-commission-table--container .table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+main .main-currency-table--container .table__bottom-right, .main-commission-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+main .currency-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+    color: var(--warm-black);
+}
+main .commission-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+    color: var(--warm-black);
+}
+main .main-minilogo {
+    position: relative;
+    top: 45px;
+}
+main .main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+main .main-product-detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/batata.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .main-product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+main .main-product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+main .main-product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+main .main-product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+main .main-product-detail--card .main-product-card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+main .main-product-detail--card .main-product-card-body {
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: #808080;
+}
+main .main-product-detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/clock.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .main-product-detail--card .eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/eye.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .main-product-detail--card .dollar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/dollar-sign.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .main-product-detail--card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/check-circle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 20vh;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/img/bitcoinbaby2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .bitcoin-img-container h2 {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+main .main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main .main-plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+main .main-plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+main .main-plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+main .main-plans-container--slider {
+    display: flex;
+    gap: 5px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+main .main-plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba( 89, 73, 30, 0.16);
+}
+main .main-plans-container--card .recommended {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    padding: 6px;
+    width: 120px;
+    height: 31px;
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+main .main-plan-card--title {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: black;
+}
+main #main-plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: black;
+}
+main #main-plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+main .main-plan-card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+main .main-plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.87rem;
+    color: var(--black);
+}
+main .main-plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://codes.unidepix.com/codes/batatabit/assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+main .main-plan-card--title--monthly {
+    padding-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: black;
+}
+main .main-plans-container--card .lifetime {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    padding: 6px;
+    width: 120px;
+    height: 31px;
+    font-size: 1.4rem;
+    background-color: var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    padding-left: 30px;
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer .left li {
+    margin: 10px 0;
+}
+footer .left a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+footer .right {
+    padding-right: 30px;
+}

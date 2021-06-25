@@ -1,0 +1,1 @@
+Batatabit es el resultado del "Curso de Responsive Design: Maquetación Mobile First" de la escuela de Desarrollo Web de Platzi.

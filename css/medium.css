@@ -1,0 +1,9 @@
+main .main-tables--slider {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 370px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
